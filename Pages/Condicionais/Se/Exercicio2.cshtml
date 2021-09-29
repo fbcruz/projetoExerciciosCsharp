@@ -1,0 +1,23 @@
+﻿@page
+@model Exercicios.Pages.Condicionais.Se.Exercicio2Model
+@{ ViewData["Title"] = "Salário";
+}
+
+<h1 class="text-center display-4">Estrutura Condicional - IF</h1>
+<h2 class="text-center display-4">Exercício 2</h2>
+
+<p>
+    Elaborar um formulário para ler o salário mensal de um funcionário. Calcular e escrever o valor do 
+    novo salário considerando que o funcionário que ganha mais de 1000 reais terá um aumento de 8% e 
+    o funcionário que ganha 1000 reais ou menos, receberá um aumento de 10%.
+</p>
+<form method="post">
+  <h1 class="mt-3 text-center">@ViewData["Aumento"]</h1>
+  <div class="form-row">
+      <div class="form-group col-7">
+          <label for="Time1">Salário do Funcionário </label>
+          <input type="text" class="form-control" id="salario" name="salario" required>
+        </div>
+    </div>    
+      <button type="submit" class="btn btn-primary">Calcular Novo Salário</button>
+</form>

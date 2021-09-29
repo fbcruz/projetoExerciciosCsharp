@@ -1,0 +1,22 @@
+﻿@page
+@model Exercicios.Pages.Operadores.Exercicio3Model
+@{
+    ViewData["Title"] = "OP. Mat - Exerc.03";
+}
+
+<h1 class="text-center display-4"> Operadores Matemáticos</h1>
+<h2 class="text-center display-4"> Exercício 3</h2>
+<p>
+    O custo ao consumidor de um carro novo, é a soma do custo de fábrica com a percentagem do revendedor e
+    com o custo dos impostos (aplicados ao custo de fábrica). Supondo que a percentagem do revendedor seja de
+    25% do custo de fábrica e que os impostos custam 45 % do custo de fábrica, faça um algoritmo que leia o valor
+    de custo de fábrica e determine o preço final do automóvel (custo ao consumidor). 
+</p>
+<form method="post">
+    <div class="form-group">
+        <label for="Nome"> Informe o Valor do custo de fábrica do automóvel</label>
+        <input type="text" class="form-control" id="custo" name="custo" placeholder="Valor do Custo de Fábrica" required>
+    </div>
+    <button type="submit" class="btn btn-primary"> Calcular o Custo final ao consumidor</button>
+    <p class="mt-3 text-center">@ViewData["Resultado"]</p>
+    </form>

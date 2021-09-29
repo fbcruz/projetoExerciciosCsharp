@@ -1,0 +1,23 @@
+﻿@page
+@model Exercicios.Pages.Repeticao.Repita.Exercicio3Model
+@{
+    ViewData["Title"] = "Soma";
+}
+
+<h1 class="text-center display-4">Estrutura de Repetição - DO WHILE</h1>
+<h2 class="text-center display 4">Exercício 3</h2>
+
+<p>
+    PROGRAMA SOMA: Faça um algoritmo que leia um número n, some todos os números inteiros de 1 a
+    n, e mostre o resultado obtido.
+</p>
+
+<form method="post" class="col-md-4 offset-md-4 col-sm-12">
+    <div class="form-group">
+        <label for="Numero">Informe um número: </label>
+        <input type="number" class="form-control" id="Numero" name="Numero" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    <p class="mt-3 text-center">@ViewData["Soma"]</p>
+
+</form>

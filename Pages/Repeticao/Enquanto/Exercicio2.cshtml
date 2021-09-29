@@ -1,0 +1,33 @@
+﻿@page
+@model Exercicios.Pages.Repeticao.Enquanto.Exercicio2Model
+@{
+ViewData["Title"] = "Inteiros";
+}
+
+<h1 class="text-center display-4">Estrutura de Repetição - WHILE</h1>
+<h2 class="text-center display 4">Exercício 2</h2>
+
+<p>
+    PROGRAMA IMPRESSÃO: Faça um algoritmo que imprima todos os números inteiros de 1 a n (n é
+    fornecido pelo usuário).
+</p>
+
+<form method="post" class="col-md-4 offset-md-4 col-sm-12">
+    <div class="form-group">
+        <label for="Numero">Informe um número: </label>
+        <input type="number" class="form-control" id="Numero" name="Numero" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    @if (ViewData["Inteiros"] != null)
+    {
+    <table class="table table-scriped my-3">
+        @foreach (var linha in ViewBag.Inteiros)
+            {
+        <tr>
+            <td>@linha</td>
+        </tr>
+
+            }
+    </table>
+    }
+</form>

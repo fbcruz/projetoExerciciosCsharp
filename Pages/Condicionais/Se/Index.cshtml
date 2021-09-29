@@ -1,0 +1,36 @@
+﻿@page
+@model Exercicios.Pages.Condicionais.Se.IndexModel
+@{
+    ViewData["Title"] = "Condicional IF";
+}
+
+<div class="text-center">
+    <h1 class="display-4"> Estrutura Condicional</h1>
+    <h2 class="text-center display-4">SE - IF</h2>
+</div>
+<div class="row">
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/partida.jpg")"class="card-img-top" alt="Condicional IF - Partida">
+        <div class="card-body">
+            <h5 class="card-title">Partida</h5>
+            <p class="card-text">Ler o nome de 2 times e o número de gols marcados na partida e escrever o nome do vencedor.</p>
+            <a asp-page="/condicionais/Se/Exercicio1" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/salario.jpg")" class="card-img-top" alt="Condicional IF">
+        <div class="card-body">
+            <h5 class="card-title">Salário</h5>
+            <p class="card-text">Ler o salário atual de um funcionário e calcular o novo salário de acordo com o percentual a ser aplicado.</p>
+            <a asp-page="/Condicionais/Se/Exercicio2" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/estoque.jpg")" class="card-img-top" alt="Condicional IF">
+        <div class="card-body">
+            <h5 class="card-title">Estoque</h5>
+            <p class="card-text">Ler informações sobre o estoque de um produto e calcular se é necessário realizar reposição.</p>
+            <a asp-page="/Condicionais/Se/Exercicio3" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+</div>

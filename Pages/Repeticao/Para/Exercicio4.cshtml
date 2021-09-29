@@ -1,0 +1,29 @@
+﻿@page
+@model Exercicios.Pages.Repeticao.Para.Exercicio4Model
+@{ViewData["Title"] = "FIBONACCI";
+}
+
+<h1 class="text-center display-4">Estrutura de Repetição - FOR</h1>
+<h2 class="text-center display 4">Exercício 4</h2>
+
+<p>
+    PROGRAMA FIBONACCI: A série de Fibonacci é formada pela seguinte sequência: 1, 1, 2, 3, 5, 8, 13, 21,
+    34,.... Escreva um algoritmo que gere a série de Fibonacci até o vigésimo termo.
+</p>
+<form method="post" class="col-md-4 offset-md-4 col-sm-12">
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    @if (ViewData["fibonacci"] != null)
+    {
+    <table class="table table-scriped my-3">
+        @foreach (var linha in ViewBag.fibonacci)
+            {
+        <tr>
+            <td>@linha</td>
+        </tr>
+
+            }
+    </table>
+    }
+</form>
+
+

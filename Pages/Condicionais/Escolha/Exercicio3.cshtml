@@ -1,0 +1,26 @@
+﻿@page
+@model Exercicios.Pages.Condicionais.Escolha.Exercicio3Model
+@{
+ViewData["Title"] = "AGENCIA";
+}
+
+<h1 class="text-center display-4">Estrutura Condicional - Switch</h1>
+<h2 class="text-center display-4">Exercício 3</h2>
+
+<p>
+    Agência: Um banco concederá um crédito especial aos seus clientes, variável com o saldo médio no último 
+ano. Faça um algoritmo que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a 
+tabela abaixo. Mostre uma mensagem informando o saldo médio e o valor do crédito.
+
+</p>
+<form method="post" class="col-md-6 offset-md-3 col-sm-12">
+    <div class="form-row">
+        <div class="form-group col-md-6 col-sm-12">
+            <label for="saldo">Informe o saldo médio do cliente  </label>
+            <input type="text" class="form-control" id="Saldo" name="Saldo" required placeholder="Saldo Medio">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    <p class="mt-3 text-center">@ViewData["Resultado"]</p>
+    </form>
+    

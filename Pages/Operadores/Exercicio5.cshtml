@@ -1,0 +1,28 @@
+﻿@page
+@model Exercicios.Pages.Operadores.Exercicio5Model
+@{
+ ViewData["Title"] = "OP. Mat - Exerc.05";
+}
+
+<h1 class="text-center display-4"> Operadores Matemáticos</h1>
+<h2 class="text-center display-4"> Exercício 5</h2>
+<p>
+    Elabore um algoritmo que leia 3 números e apresente o resultado da soma do primeiro pelo segundo multiplicado
+    pelo terceiro.
+</p>
+<form method="post">
+    <div class="form-group">
+        <label for="Nome">Digite o Número 1</label>
+        <input type="text" class="form-control" id="numero1" name="numero1" placeholder="Informe primeiro número" required>
+    </div>
+        <div class="form-group">
+        <label for="Nota1"> Digite o Número 2</label>
+        <input type="text" class="form-control" nr_pagas="numero2" name="numero2" placeholder="Informe segundo número">
+    </div>
+           <div class="form-group">
+        <label for="Nota1"> Digite o Número 3</label>
+        <input type="text" class="form-control" id="numero3" name="numero3" placeholder="Informe terceiro número">
+    </div>
+    <button type="submit" class="btn btn-primary"> Calcular</button>
+    <p class="mt-3 text-center">@ViewData["Resultado"]</p>
+    </form>

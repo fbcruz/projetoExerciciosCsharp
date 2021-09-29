@@ -1,0 +1,77 @@
+﻿@page
+@model Exercicios.Pages.Repeticao.Enquanto.IndexModel
+@{
+ViewData["Title"] = "Estrutura de Repetição - WHILE";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Estrutura de Repetição</h1>
+    <h2 class="text-center display-4">WHILE</h2>
+</div>
+<div class="row">
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/tabuada.png")" class="card-img-top" alt="Repetição WHILE - Tabuada">
+        <div class="card-body">
+            <h5 class="card-title">TABUADA</h5>
+            <p class="card-text">Solicite ao usuário um número e informe a tabuada correspondente.</p>
+            <a asp-page="/Repeticao/Enquanto/Exercicio1" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/inteiros.png")" class="card-img-top" alt="Repetição WHILE - Inteiros">
+        <div class="card-body">
+            <h5 class="card-title">INTEIROS</h5>
+            <p class="card-text">
+                Faça um algoritmo que imprima todos os números inteiros de 1 a n (n é
+                fornecido pelo usuário).
+            </p>
+            <a asp-page="/Repeticao/Enquanto/Exercicio2" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/soma.png")" class="card-img-top" alt="Repetição WHILE - Soma Inteiros">
+        <div class="card-body">
+            <h5 class="card-title">SOMA</h5>
+            <p class="card-text">
+                PROGRAMA SOMA: Faça um algoritmo que leia um número n, some todos os números inteiros de 1 a
+                n, e mostre o resultado obtido.
+            </p>
+            <a asp-page="/Repeticao/Enquanto/Exercicio3" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/fatorial.png")" class="card-img-top" alt="Repetição WHILE  - Fatorial">
+        <div class="card-body">
+            <h5 class="card-title">FATORIAL</h5>
+            <p class="card-text">
+                PROGRAMA FATORIAL: Faça um algoritmo que calcula o fatorial de um número inteiro
+                fornecido pelo usuário.
+            </p>
+            <a asp-page="/Repeticao/Enquanto/Exercicio4" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/fibonacci.png")" class="card-img-top" alt="Repetição WHILE  - Fatorial">
+        <div class="card-body">
+            <h5 class="card-title">FIBONACCI</h5>
+            <p class="card-text">
+                PROGRAMA FIBONACCI: A série de Fibonacci é formada pela seguinte sequência: 1, 1, 2, 3, 5, 8, 13, 21,
+                34,.... Escreva um algoritmo que gere a série de Fibonacci até o vigésimo termo.
+            </p>
+            <a asp-page="/Repeticao/Enquanto/Exercicio5" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+        <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/impares.png")" class="card-img-top" alt="Repetição WHILE  - Impares">
+        <div class="card-body">
+            <h5 class="card-title">ÍMPARES</h5>
+            <p class="card-text">
+                PROGRAMA ÍMPARES: Faça um algoritmo que calcule o produto dos inteiros ímpares de 1 a 15.
+            </p>
+            <a asp-page="/Repeticao/Enquanto/Exercicio6" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+</div>
+
+
+

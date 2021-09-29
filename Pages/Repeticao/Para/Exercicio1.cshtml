@@ -1,0 +1,44 @@
+﻿@page
+@model Exercicios.Pages.Repeticao.Para.Exercicio1Model
+@{
+    ViewData["Title"] = "Tabuada";
+}
+
+<h1 class="text-center display-4">Estrutura de Repetição - FOR</h1>
+<h2 class="text-center display 4">Exercício 1</h2>
+<p>
+    Elabore um formulário que solicite ao usuário um número e informe a tabuada correspondente. São apenas permitidos valores entre 0 e 10.
+</p>
+<form method="post" class="col-md-4 offset-md-4 col-sm-12">
+    <div class="form-group">
+        <label for="Numero">Informe um número: </label>
+        <input type="number" class="form-control" id="Numero" name="Numero" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    @if (ViewData["Tabuada"] != null)
+    {
+        <table class="table table-scriped my-3">
+            @foreach (var linha in ViewBag.Tabuada)
+            {
+                <tr>
+                    <td>@linha</td>
+                </tr>
+                
+            }
+        </table>
+    }
+    </form>
+
+    @section Scripts{
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script type="text/javascript">
+        let erro ='@Html.Raw(ViewData["Erro"])';
+        if (erro != ''){
+            Swal.fire(
+            '@Html.Raw(ViewData["Title"])',
+            erro,
+            'error'
+            );
+    }
+    </script>
+}

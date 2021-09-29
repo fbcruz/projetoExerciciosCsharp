@@ -1,0 +1,37 @@
+﻿@page
+@model Exercicios.Pages.Condicionais.Se.Exercicio3Model
+@{ ViewData["Title"] = "Estoque";
+}
+
+<h1 class="text-center display-4">Estrutura Condicional - IF</h1>
+<h2 class="text-center display-4">Exercício 3</h2>
+
+<p>
+    Desenvolva um formulário para ler: quantidade atual em estoque, quantidade máxima em estoque e 
+    quantidade mínima em estoque de um produto. Calcular e apresentar a quantidade média 
+    ((quantidade média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for 
+    maior ou igual a quantidade média escrever na mensagem 'Não efetuar compra', senão escrever na 
+    mensagem 'Efetuar compra'.
+</p>
+<form method="post">
+  <h1 class="mt-3 text-center">@ViewData["Resultado"]</h1>
+  <div class="form-row">
+      <div class="form-group col-7">
+          <label for="Time1">Informe a quantidade atual do produto em estoque:</label>
+          <input type="text" class="form-control" id="atual" name="atual" required placeholder="Quantidade Atual">
+        </div>
+    </div>
+     <div class="form-row">
+      <div class="form-group col-7">
+          <label for="Time1">Informe a quantidade máxima do produto em estoque:</label>
+          <input type="text" class="form-control" id="maxima" name="maxima" required placeholder="Quantidade Máxima">
+        </div>
+    </div>
+     <div class="form-row">
+      <div class="form-group col-7">
+          <label for="Time1">Informe a quantidade mínima do produto em estoque:</label>
+          <input type="text" class="form-control" id="minima" name="minima" required placeholder="Quantidade Mínima">
+        </div>
+    </div>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+</form>

@@ -1,0 +1,35 @@
+﻿@page
+@model Exercicios.Pages.Condicionais.Escolha.Exercicio2Model
+@{
+  ViewData["Title"] = "LANCHONETE";
+}
+
+<h1 class="text-center display-4">Estrutura Condicional - Switch</h1>
+<h2 class="text-center display-4">Exercício 1</h2>
+
+<p>
+Lanchonete: O cardápio de uma lanchonete é o seguinte: </br>
+<b>Código dos Produtos </b> </br>
+Cachorro-quente 100 </br>
+Bauru simples 101 </br>
+Bauru com ovo 102  </br>
+Hambúrguer 103 </br>
+Cheeseburguer 104  </br>
+Refrigerante 105 </br>
+Informe o código e quantidade do produto desejado:
+</p>
+<form method="post" class="col-md-6 offset-md-3 col-sm-12">
+    <div class="form-row">
+        <div class="form-group col-md-6 col-sm-12">
+            <label for="Produto">Informe o código do produto: </label>
+            <input type="text" class="form-control" id="Produto" name="Produto" required placeholder="codigo do produto">
+        </div>
+    <div class="form-group col-md-6 col-sm-12">
+        <label for="Quantidade">Informe a quantidade do produto: </label>
+        <input type="text" class="form-control" id="Quantidade" name="Quantidade" required placeholder="Quantidade">
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    <h3 class="mt-3 text-center">@ViewData["Valor"]</h3>
+    </form>
+    

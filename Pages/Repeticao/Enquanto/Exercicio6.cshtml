@@ -1,0 +1,27 @@
+﻿@page
+@model Exercicios.Pages.Repeticao.Enquanto.Exercicio6Model
+@{ViewData["Title"] = "ÍMPARES";
+}
+
+<h1 class="text-center display-4">Estrutura de Repetição - WHILE</h1>
+<h2 class="text-center display 4">Exercício 6</h2>
+
+<p>
+    PROGRAMA ÍMPARES: Faça um algoritmo que calcule o produto dos inteiros ímpares de 1 a 15.
+
+</p>
+<form method="post" class="col-md-4 offset-md-4 col-sm-12">
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    @if (ViewData["impares"] != null)
+    {
+    <table class="table table-scriped my-3">
+        @foreach (var linha in ViewBag.impares)
+            {
+        <tr>
+            <td>@linha</td>
+        </tr>
+
+            }
+    </table>
+    }
+</form>

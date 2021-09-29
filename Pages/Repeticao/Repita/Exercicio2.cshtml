@@ -1,0 +1,36 @@
+﻿@page
+@model Exercicios.Pages.Repeticao.Repita.Exercicio2Model
+@{ViewData["Title"] = "Fatorial";
+}
+
+<h1 class="text-center display-4">Estrutura de Repetição - DO</h1>
+<h2 class="text-center display 4">Exercício 2</h2>
+
+<p>
+    PROGRAMA FATORIAL: O fatorial de um inteiro positivo n (escrito n! e pronunciado “n fatorial”) é igual
+    ao produto dos inteiros positivos de 1 a n. Faça um algoritmo que calcula o fatorial de um número inteiro
+    fornecido pelo usuário.
+</p>
+
+<form method="post" class="col-md-4 offset-md-4 col-sm-12">
+    <div class="form-group">
+        <label for="Numero">Informe um número: </label>
+        <input type="number" class="form-control" id="Numero" name="Numero" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular</button>
+    <p class="mt-3 text-center">@ViewData["Resultado"]</p>
+</form>
+
+@section Scripts{
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript">
+        let erro ='@Html.Raw(ViewData["Erro"])';
+        if (erro != ''){
+            Swal.fire(
+            '@Html.Raw(ViewData["Title"])',
+            erro,
+            'error'
+            );
+    }
+    </script>
+    }

@@ -1,0 +1,36 @@
+﻿@page
+@model Exercicios.Pages.Condicionais.Escolha.IndexModel
+@{
+    ViewData["Title"] = "Condicional SWITCH";
+}
+<div class="text-center">
+    <h1 class="display-4">Estrutura Condicional</h1>
+    <h2 class="text-center display-4">Escolha - SWITCH</h2>
+</div>
+<div class="row">
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/imc.jpg")" class="card-img-top" alt="Condicional Switch - IMC">
+        <div class="card-body">
+            <h5 class="card-title">IMC</h5>
+            <p class="card-text">Ler o peso e a altura de uma pessoa e calcular seu IMC. Em seguida mostrar a situação de seu peso em relação ao IMC.</p>
+            <a asp-page="/Condicionais/Escolha/Exercicio1" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/lanchonete.jpg")" class="card-img-top" alt="Condicional Switch - IMC">
+        <div class="card-body">
+            <h5 class="card-title">LANCHONETE</h5>
+            <p class="card-text">Elabora uma página que permita ao usuário informar o código do item pedido e a quantidade 
+comprada, após a leitura calcule o valor a ser pago por aquele lanche</p>
+            <a asp-page="/Condicionais/Escolha/Exercicio2" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-sm-12" style="padding:0">
+        <img src="@Url.Content("~/images/banco.jpg")" class="card-img-top" alt="Condicional Switch - IMC">
+        <div class="card-body">
+            <h5 class="card-title">CRÉDITO</h5>
+            <p class="card-text">Ler o saldo médio de um cliente e calcule o valor do crédito disponibilizado pelo banco e mostre uma mensagem informando o saldo médio e o valor do crédito.</p>
+            <a asp-page="/Condicionais/Escolha/Exercicio3" class="btn btn-primary">Executar</a>
+        </div>
+    </div>
+</div>
